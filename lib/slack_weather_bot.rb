@@ -3,6 +3,9 @@ require 'dotenv/load'
 
 class SlackWeatherBot
 
+  # def search_first_weather_tweet
+  #   slack_client.search('天気').first.text
+  # end
   def notify_forecast
     slack_client.ping '今日は晴れ'
   rescue => e
